@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Skills | SkillConnect Botswana</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Find Skills</a></li>
+<li><a href="register.html">Register Skill</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<main>
+
+<!-- Skills Navigation -->
+<section class="skills-links">
+<h2>Browse Skills</h2>
+<a href="#baking">Baking</a>
+<a href="#makeup">Makeup</a>
+<a href="#sewing">Sewing</a>
+<a href="#digital">Digital Marketing</a>
+<a href="#videography">Videography</a>
+<a href="#carwash">Car Wash</a>
+<a href="#cleaning">Cleaning</a>
+<a href="#events">Event Planning</a>
+<a href="#hair">Hair Styling</a>
+<a href="#nails">Nail Technician</a>
+<a href="#photography">Photography</a>
+<a href="#design">Graphic Design</a>
+<a href="#web">Web Design</a>
+</section>
+
+<!-- Services List -->
+<section class="services-list">
+<h2>Explore Skills</h2>
+
+<div class="cards">
+
+<!-- Baking -->
+<div class="card" id="baking" onclick="openModal('Baking')">
+<img src="images/baking.jpg" class="card-img">
+<h3>Baking</h3>
+<p>Custom cakes and pastries.</p>
+<p class="price">From BWP 200</p>
+<p class="tap">Click to explore</p>
+</div>
+
+<!-- Makeup -->
+<div class="card" id="makeup" onclick="openModal('Makeup Artist')">
+<img src="images/makeup.webp" class="card-img">
+<h3>Makeup Artist</h3>
+<p>Professional makeup services.</p>
+<p class="price">From BWP 150</p>
+<p class="tap">Click to explore</p>
+</div>
+
+<!-- Sewing -->
+<div class="card" id="sewing" onclick="openModal('Sewing & Tailoring')">
+<img src="images/sewing.webp" class="card-img">
+<h3>Sewing & Tailoring</h3>
+<p>Custom clothing and repairs.</p>
+<p class="price">From BWP 180</p>
+<p class="tap">Click to explore</p>
+</div>
+
+<!-- Digital -->
+<div class="card" id="digital" onclick="openModal('Digital Marketing')">
+<img src="images/Digital-marketing.jpg" class="card-img">
+<h3>Digital Marketing</h3>
+<p>Social media and branding.</p>
+<p class="price">From BWP 250</p>
+<p class="tap">Click to explore</p>
+</div>
+
+<!-- Videography -->
+<div class="card" id="videography" onclick="openModal('Videography')">
+<img src="images/photography.jpg" class="card-img">
+<h3>Videography</h3>
+<p>Video creation and editing.</p>
+<p class="price">From BWP 200</p>
+<p class="tap">Click to explore</p>
+</div>
+
+<!-- Car Wash -->
+<div class="card" id="carwash" onclick="openModal('Car Wash')">
+<img src="images/Car-Wash.avif" class="card-img">
+<h3>Car Wash</h3>
+<p>Mobile car cleaning services.</p>
+<p class="price">From BWP 120</p>
+<p class="tap">Click to explore</p>
+</div>
+
+<!-- Cleaning -->
+<div class="card" id="cleaning" onclick="openModal('Cleaning Services')">
+<img src="images/cleaning service.jpeg" class="card-img">
+<h3>Cleaning Services</h3>
+<p>Home and office cleaning.</p>
+<p class="price">From BWP 100</p>
+<p class="tap">Click to explore</p>
+</div>
+
+<!-- Events -->
+<div class="card" id="events" onclick="openModal('Event Planning')">
+<img src="images/event planning.jpg" class="card-img">
+<h3>Event Planning</h3>
+<p>Weddings and parties.</p>
+<p class="price">From BWP 200</p>
+<p class="tap">Click to explore</p>
+</div>
+
+<!-- Hair -->
+<div class="card" id="hair" onclick="openModal('Hair Styling')">
+<img src="images/hairstyle.jpg" class="card-img">
+<h3>Hair Styling</h3>
+<p>Braiding and styling.</p>
+<p class="price">From BWP 150</p>
+<p class="tap">Click to explore</p>
+</div>
+
+<!-- Nails -->
+<div class="card" id="nails" onclick="openModal('Nail Technician')">
+<img src="images/nailtech.jpg" class="card-img">
+<h3>Nail Technician</h3>
+<p>Manicure and nail art.</p>
+<p class="price">From BWP 120</p>
+<p class="tap">Click to explore</p>
+</div>
+
+<!-- Photography -->
+<div class="card" id="photography" onclick="openModal('Photography')">
+<img src="images/photography.jpeg" class="card-img">
+<h3>Photography</h3>
+<p>Professional photos.</p>
+<p class="price">From BWP 180</p>
+<p class="tap">Click to explore</p>
+</div>
+
+<!-- Design -->
+<div class="card" id="design" onclick="openModal('Graphic Design')">
+<img src="images/graphic-design.jpg" class="card-img">
+<h3>Graphic Design</h3>
+<p>Logos and posters.</p>
+<p class="price">From BWP 200</p>
+<p class="tap">Click to explore</p>
+</div>
+
+<!-- Web -->
+<div class="card" id="web" onclick="openModal('Web Design')">
+<img src="images/Web-designer.jpg" class="card-img">
+<h3>Web Design</h3>
+<p>Website creation.</p>
+<p class="price">From BWP 250</p>
+<p class="tap">Click to explore</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 SkillConnect Botswana</p>
+</footer>
+
+</main>
+
+<!-- MODAL -->
+<div id="skillModal" class="modal">
+<div class="modal-content">
+
+<h3 id="modalSkill"></h3>
+<p>What would you like to do?</p>
+
+<button onclick="chooseOption('service')">Get Service</button>
+<button onclick="chooseOption('learn')">Learn Skill</button>
+
+<br><br>
+
+<button onclick="closeModal()">Close</button>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

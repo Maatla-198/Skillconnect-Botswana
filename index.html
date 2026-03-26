@@ -1,0 +1,157 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillConnect Botswana</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<header class="hero">
+    <div class="overlay">
+        <h1>SkillConnect Botswana</h1>
+        <p>Connecting Skilled Youth With Customers Across Botswana</p>
+
+        <div class="hero-buttons">
+            <a href="services.html" class="btn">Find Skills</a>
+            <a href="register.html" class="btn">Register Your Skill</a>
+        </div>
+    </div>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Find Skills</a></li>
+<li><a href="register.html">Register Skill</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+
+<main>
+
+<!-- SLIDESHOW -->
+<section class="slideshow-container">
+
+<div class="slide fade">
+<img src="images/sewing.webp">
+<div class="caption">Connecting Skilled Youth</div>
+</div>
+
+<div class="slide fade">
+<img src="images/sekele.avif">
+<div class="caption">Promoting Entrepreneurship</div>
+</div>
+
+<div class="slide fade">
+<img src="images/pexels.webp">
+<div class="caption">Turn Your Skill Into Income</div>
+</div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works">
+<h2>How SkillConnect Works</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>1. Register</h3>
+<p>Sign up and list your skill on our platform for free.</p>
+</div>
+
+<div class="card">
+<h3>2. Get Customers</h3>
+<p>Customers find and book your services بسهولة.</p>
+</div>
+
+<div class="card">
+<h3>3. Earn Money</h3>
+<p>Get paid for your skills while we take a small commission.</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- FEATURED SERVICES -->
+<section class="featured-services">
+<h2>Popular Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Baking</h3>
+<p>Custom cakes, pastries, and baked goods.</p>
+</div>
+
+<div class="card">
+<h3>Makeup Artist</h3>
+<p>Professional makeup services for events.</p>
+</div>
+
+<div class="card">
+<h3>Sewing & Tailoring</h3>
+<p>Custom clothing, repairs, and design.</p>
+</div>
+
+<div class="card">
+<h3>Digital Services</h3>
+<p>Social media management and digital marketing.</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- CALL TO ACTION -->
+<section class="cta">
+<h2>Ready to Start Your Journey?</h2>
+<p>Join SkillConnect today and turn your skills into income.</p>
+<a href="register.html" class="btn">Get Started</a>
+</section>
+
+<footer>
+<p>© 2026 SkillConnect Botswana</p>
+</footer>
+
+</main>
+
+
+<!-- SLIDESHOW SCRIPT -->
+<script>
+let slideIndex = 0;
+
+showSlides();
+
+function showSlides(){
+let slides = document.getElementsByClassName("slide");
+
+for(let i = 0; i < slides.length; i++){
+slides[i].style.display = "none";
+}
+
+slideIndex++;
+
+if(slideIndex > slides.length){
+slideIndex = 1;
+}
+
+slides[slideIndex-1].style.display = "block";
+
+setTimeout(showSlides, 3000);
+}
+</script>
+
+</body>
+</html>
+```

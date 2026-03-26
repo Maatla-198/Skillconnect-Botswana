@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Service</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Find Skills</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section class="booking-form">
+
+<h2>Book Service</h2>
+
+<p id="selectedSkill"></p>
+
+<form onsubmit="processBooking(event)">
+
+<label>Your Name</label>
+<input type="text" required>
+
+<label>Location</label>
+<input type="text" required>
+
+<label>Contact Number</label>
+<input type="text" required>
+
+<label>Service Price (BWP)</label>
+<input type="number" id="price" required>
+
+<p id="total"></p>
+
+<button type="submit">Confirm Booking</button>
+
+</form>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
